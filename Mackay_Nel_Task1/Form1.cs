@@ -17,6 +17,7 @@ namespace Mackay_Nel_Task1
 {
     public partial class Form1 : Form
     {
+        //Game form's class 
         GameEngine engine;
         BinaryFormatter bf = new BinaryFormatter();
 
@@ -48,38 +49,38 @@ namespace Mackay_Nel_Task1
 
         private void saveBttn_Click(object sender, EventArgs e)
         {
-            //timer1.Enabled = false;
-            int n = 40;
-            int bu = 4;
-            Map map = new Map( n, bu , infoTxtBox);
+            ////timer1.Enabled = false;
+            //int n = 40;
+            //int bu = 4;
+            //Map map = new Map( n, bu , infoTxtBox);
             
             
 
-            FileStream fs = new FileStream("SaveGame.bat", FileMode.Create, FileAccess.Write, FileShare.None);
-            try
-            {
-                using (fs)
-                    bf.Serialize(fs,map);
-            }
-            catch (Exception r)
-            {
-                MessageBox.Show ("The game has been saved");
-            }
+            //FileStream fs = new FileStream("SaveGame.bat", FileMode.Create, FileAccess.Write, FileShare.None);
+            //try
+            //{
+            //    using (fs)
+            //        bf.Serialize(fs,map);
+            //}
+            //catch (Exception r)
+            //{
+            //    MessageBox.Show ("The game has been saved");
+            //}
 
         }
 
         private void loadBttn_Click(object sender, EventArgs e)
         {
-            FileStream fs = new FileStream("SaveGame.bat", FileMode.Open, FileAccess.Read, FileShare.None);
+            //FileStream fs = new FileStream("SaveGame.bat", FileMode.Open, FileAccess.Read, FileShare.None);
 
-            try
-            {
-                map
-            }
-            catch (Exception r)
-            {
-                MessageBox.Show("The game has been loaded");
-            }
+            //try
+            //{
+                
+            //}
+            //catch (Exception r)
+            //{
+            //    MessageBox.Show("The game has been loaded");
+            //}
 
 
         }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mackay_Nel_Task1
 {
+    //This class holds all the variables and Constructors for the Ranged Units.
     [Serializable]
    public class RangedUnit : Unit
     {
