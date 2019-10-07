@@ -59,8 +59,7 @@ namespace Mackay_Nel_Task1
             try
             {
                 using (fs)
-                    bf.Serialize(fs,map.Units);
-                    bf.Serialize(fs,map.Buildings);
+                    bf.Serialize(fs,map);
             }
             catch (Exception r)
             {
@@ -75,8 +74,7 @@ namespace Mackay_Nel_Task1
 
             try
             {
-                Building b = (Building)bf.Deserialize(fs);
-                Unit u = (Unit)bf.Deserialize(fs);
+                map
             }
             catch (Exception r)
             {

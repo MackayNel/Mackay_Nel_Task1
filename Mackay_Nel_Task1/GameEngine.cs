@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Mackay_Nel_Task1
-{
+{//This is the game engine class, it is what tells the units what to do, and it handles updates.
     [Serializable]
     class GameEngine 
     {

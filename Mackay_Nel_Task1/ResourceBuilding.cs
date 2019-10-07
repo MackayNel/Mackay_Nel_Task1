@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Mackay_Nel_Task1
-{
+{//This class is where the Resource building is setup .
     [Serializable]
     class ResourceBuilding : Building //All Part of task 2
     {
@@ -70,6 +70,7 @@ namespace Mackay_Nel_Task1
             temp += (IsDestroyed ? "Damaged!" : "Functional!");
             return temp;
         }
+        //This is the ResourceBuildings Constructor.
         public ResourceBuilding(int bX, int bY, int bh, int bf, string bs)
         {
             buildingX = bX;

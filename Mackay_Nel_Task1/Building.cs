@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Mackay_Nel_Task1
-{
+{//This is the building's base class, It only holds the protected variables for the buildings.
     [Serializable]
     public abstract class Building//All Part of task 2
     {

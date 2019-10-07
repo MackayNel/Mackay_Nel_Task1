@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mackay_Nel_Task1
 {
+    //This class is where the Factory building is setup
     [Serializable]
     class FactoryBuilding : Building //All Part of task 2
     {
@@ -65,6 +66,7 @@ namespace Mackay_Nel_Task1
             temp += (IsDestroyed ? "Damaged!" : "Functional!");
             return temp;
         }
+        //This is the Factory buildings constructor.
         public FactoryBuilding(int bX, int bY, int bh, int bf, string bs)
         {
             buildingX = bX;
